@@ -1,0 +1,25 @@
+.sudoku-cell {
+    border: 1px black solid; 
+    width: 1rem; 
+    height: 1rem;
+    line-height: 2;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+.sudoku-cell.sudoku-border-right {
+    border-right: 2px black solid;
+}
+
+.sudoku-cell.sudoku-border-bottom {
+    border-bottom: 2px black solid;
+}
+
+.sudoku-cell.selected {
+    background-color: #bbb;
+}
+
+.sudoku-table {
+    border-spacing: 0px;
+    border: 3px black solid;
+}

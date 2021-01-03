@@ -1,0 +1,55 @@
+.app {
+    margin: 2rem 10rem;
+    font-size: 0;
+    font-family: Helvetica;
+}
+
+.app__panel-50 {
+    display: inline-block;
+    border: 1px solid black;
+    width: calc(50% - 1px);
+    min-height: 20rem;
+    margin: 0 -1px 0 0;
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+.app__channel-box {
+    display: block;
+    width: 60%;
+    margin: 1rem auto;
+    border: 3px inset #ccc;
+}
+
+.app__channel-box--highlighted {
+    border: 3px inset #c44;
+    background-color: #fdd;
+}
+
+.channel-box__title {
+    margin: 0.25rem 1rem;
+}
+
+.channel-box__text {
+    margin: 0.25rem 1rem;
+}
+
+.chatbox {
+    padding: 1rem;
+}
+
+.chatbox__message {
+    padding: 0.25rem 0;
+}
+
+.chatbox-message__time {
+    font-weight: 800;
+}
+
+.chatbox-message__user {
+    font-weight: 800;
+}
+
+.chatbox-message__text {
+    letter-spacing: 0.05rem;
+}

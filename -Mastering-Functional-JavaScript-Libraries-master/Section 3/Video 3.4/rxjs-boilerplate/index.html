@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>RxJs Boilerplate</title>
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="js-app  app">
+            <div class="app__panel-50">
+                <div class="js-chatbox  chatbox">
+                    <div class="chatbox__message">
+                        <span class="chatbox-message__time">12:25</span>
+                        <span class="chatbox-message__user">Zsolt</span>
+                        <span class="chatbox-message__text">Welcome!</span>
+                    </div>
+                    <div class="chatbox__message">
+                        <span class="chatbox-message__time">12:28</span>
+                        <span class="chatbox-message__user">Zsolt</span>
+                        <span class="chatbox-message__text">
+                            This is an RxJs demo. Use this demo to discover
+                            how event streams can be handled using RxJs.
+                        </span>
+                    </div>           
+                </div>     
+            </div>
+            <div class="js-channels  app__panel-50">
+                <div class="app__channel-box app__channel-box--highlighted">
+                    <h3 class="channel-box__title">general</h3>
+                    <span class="js-message-count  channel-box__text">
+                        This is a general chat.
+                    </span>
+                </div>
+                <div class="app__channel-box">
+                    <h3 class="channel-box__title">channel 1</h3>
+                    <span class="js-message-count  channel-box__text">
+                        Channel one.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script src="main.dist.js"></script>
+    </body>
+</html>        

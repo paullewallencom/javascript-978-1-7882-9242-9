@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Sudoku</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="js-app">
+            <table class="js-table  sudoku-table">
+            </table>
+        </div>
+        <script type="text/template" class="js-table-template">
+            <% _.each( table, ( row, rowIndex ) => { %>
+                <tr class="sudoku-row">
+                <% _.each( row, ( cell, cellIndex ) => { 
+                   const rightBorderClass = 
+                      ( cellIndex === 2 || cellIndex === 5 ) ? 
+                      'sudoku-border-right' : 
+                      '';
+                   const bottomBorderClass = 
+                      ( rowIndex === 2 || rowIndex === 5 ) ?
+                      'sudoku-border-bottom' :
+                      '';
+                %>
+                    <td class="sudoku-cell  <%= rightBorderClass %>  <%= bottomBorderClass %>"
+                        data-row="<%= rowIndex %>"
+                        data-column="<%= cellIndex %>">
+                        <%= typeof cell === 'number' ? cell : '-' %>
+                    </td>
+                <% } ); %>
+                </tr>
+            <% } ); %>
+        </script>
+        <script src="sudoku.dist.js"></script>
+    </body>
+</html>
